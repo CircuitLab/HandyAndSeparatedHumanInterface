@@ -1,0 +1,31 @@
+div#container{
+	position:absolute;
+	top:0px;
+	left:0px;
+	background-color: #999;
+}
+div.div-mame{
+	position:absolute;
+	width:40px;
+	height:40px;
+	background-repeat: no-repeat;
+	transform-origin:50% 50%;
+}
+
+div.mame1{
+
+	background-image: url("../images/mame1-s.png");
+}
+div.mame2{
+	
+	background-image: url("../images/mame2-s.png");
+}
+
+div.div-sara{
+	position:absolute;
+	width:360px;
+	height:360px;
+	background-repeat: no-repeat;
+	background-image: url("../images/sara.png");
+
+}
