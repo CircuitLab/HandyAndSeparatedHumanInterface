@@ -1,8 +1,21 @@
+body{
+	cursor:none;
+user-select:none;
+-webkit-user-select:none;
+-moz-user-select:none;
+-khtml-user-select:none;
+-webkit-user-drag:none;
+-khtml-user-drag:none;
+}
+
 div#container{
 	position:absolute;
 	top:0px;
 	left:0px;
-	background-color: #999;
+	background-color: #ccc;
+	background-image: url("../images/bg.jpg");
+	background-repeat: no-repeat;
+	overflow: hidden;
 }
 div.div-mame{
 	position:absolute;
@@ -12,13 +25,24 @@ div.div-mame{
 	transform-origin:50% 50%;
 }
 
-div.mame1{
+div.hashi{
+	position:absolute;
+	width:362px;
+	height:206px;
+	background-image: url("../images/hashi_25.png");
+	background-repeat: no-repeat;
+	z-index: 99999;
+}
 
+div.mame1{
+	user-select: none;
 	background-image: url("../images/mame1-s.png");
+	z-index: 1;
 }
 div.mame2{
-	
+	user-select: none;
 	background-image: url("../images/mame2-s.png");
+	z-index: 1;
 }
 
 div.div-sara{
@@ -27,5 +51,6 @@ div.div-sara{
 	height:360px;
 	background-repeat: no-repeat;
 	background-image: url("../images/sara.png");
+	z-index: 0;
 
 }

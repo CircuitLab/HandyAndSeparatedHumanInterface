@@ -1,5 +1,6 @@
 var catchObj;
 var bMouseDown = false;
+var z = 1;
 
 function init(){
 	var height = window.innerHeight;
@@ -30,9 +31,17 @@ function init(){
 		mame.appendTo($("#container"));
 	}
 
+	$("<div>")
+		.addClass("hashi")
+		.attr("id","hashi")
+		.appendTo($("#container"));
+
+	//add event handler
 	$("div.div-mame").mousedown(function(){
 		bMouseDown = true;
 		catchObj = $(this);
+		catchObj.css("z-index",z++);
+		catchObj.scale(1.2);
 	});
 
 	$("div#container").mousemove(function(e){
@@ -42,10 +51,14 @@ function init(){
 			.css("top",e.clientY - 20)
 			.css("left",e.clientX - 20);
 		}
+		$("#hashi")
+			.css("top",e.clientY - 196)
+			.css("left",e.clientX + 2);
 	});
 
 
 	$("div#container").mouseup(function(){
 		bMouseDown = false;
+		catchObj.scale(1.0);
 	});
 }
