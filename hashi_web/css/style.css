@@ -13,8 +13,6 @@ div#container{
 	top:0px;
 	left:0px;
 	background-color: #ccc;
-	background-image: url("../images/bg.jpg");
-	background-repeat: no-repeat;
 	overflow: hidden;
 }
 div.div-mame{
@@ -42,6 +40,11 @@ div.mame1{
 div.mame2{
 	user-select: none;
 	background-image: url("../images/mame2-s.png");
+	z-index: 1;
+}
+div.mame3{
+	user-select: none;
+	background-image: url("../images/mame3-s.png");
 	z-index: 1;
 }
 
